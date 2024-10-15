@@ -1,7 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
-
-*:not(button){
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     font-style: normal;
   }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+   */
+
+*:not(button) {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h2 {
+  font-size: 90px;
+}
+h3 {
+  font-size: 40px;
+}
+.product .product-text div {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 3px;
+}
+.product .product-text .product-name{
+font-size: 1.05rem;
+
+}
+.product .product-text .product-price{
+  font-weight: 800;
+  font-size: 1.1rem;
+  
+}
+.product .product-text .product-desc{
+color:#777;
+font-size: .9rem;
+  
+}
