@@ -24,10 +24,6 @@
     font-style: normal;
   }
 
-font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 
    */
 
@@ -36,11 +32,23 @@ font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
+button{
+  font-family :"Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+h1{
+  font-size: 96px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: -50px;
+}
 h2 {
   font-size: 90px;
+  text-align: center;
 }
-h3 {
-  font-size: 40px;
+h3 , .about-col p {
+  font-size: 36px;
 }
 .product .product-text div {
   font-family: "Roboto", sans-serif;
@@ -61,4 +69,10 @@ font-size: 1.05rem;
 color:#777;
 font-size: .9rem;
   
+}
+
+.about-col{
+  font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
