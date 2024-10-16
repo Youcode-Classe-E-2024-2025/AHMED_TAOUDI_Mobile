@@ -26,7 +26,16 @@
 
 
    */
+:root{
+  --font-size-p:36px;
+  --font-size-h1:96px;
+  --font-size-h2:90px;
+  --font-size-wlcm:64px;
+  --font-size-p-name: 1.05rem;
+  --font-size-p-desc: .9rem;
+  --font-size-p-price: 1.1rem;
 
+}
 *:not(button) {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
@@ -38,17 +47,30 @@ button{
   font-style: normal;
 }
 h1{
-  font-size: 96px;
+  font-size: var(--font-size-h1);
   display: inline-block;
   margin-top: 10px;
   margin-bottom: -50px;
 }
-h2 {
-  font-size: 90px;
+h2 {  
+  font-size: var(--font-size-h2);
   text-align: center;
 }
+.welcome-text  div span{
+  font-size: var(--font-size-p);
+  /* color: red ; */
+}
+.welcome-text div  .wlcm{
+  font-size: var(--font-size-wlcm);
+  /* color: red ; */
+
+}
 h3 , .about-col p {
-  font-size: 36px;
+  font-size: var(--font-size-p);
+}
+#features .content p{
+  text-align: center;
+  font-size: var(--font-size-p);
 }
 .product .product-text div {
   font-family: "Roboto", sans-serif;
@@ -57,17 +79,17 @@ h3 , .about-col p {
   padding: 3px;
 }
 .product .product-text .product-name{
-font-size: 1.05rem;
+font-size: var(--font-size-p-name);
 
 }
 .product .product-text .product-price{
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: var(--font-size-p-price);
   
 }
 .product .product-text .product-desc{
 color:#777;
-font-size: .9rem;
+font-size: var(--font-size-p-desc);
   
 }
 
@@ -76,3 +98,63 @@ font-size: .9rem;
     font-weight: 400;
     font-style: normal;
 }
+
+
+/* font (media) */
+
+@media (max-width: 1100px) {
+  :root{
+    --font-size-p:30px;
+    --font-size-h1:96px;
+    --font-size-h2:90px;
+    --font-size-wlcm:64px;
+    --font-size-p-name: 1.05rem;
+    --font-size-p-desc: .9rem;
+    --font-size-p-price: 1.1rem;
+  
+  }
+}
+/* large laptops and desktops, */
+/* ************** ( 992px and down)  **************** */
+
+@media (max-width: 992px) {
+  :root{
+    --font-size-p:20px;
+    --font-size-h1:76px;
+    --font-size-h2:70px;
+    --font-size-wlcm:54px;
+    --font-size-p-name: .9rem;
+    --font-size-p-desc: .7rem;
+    --font-size-p-price: 1rem;
+  }
+}
+/* ************** ( 768px and down)  **************** */
+
+@media (max-width: 768px) {
+  :root{
+    --font-size-p: 15px;
+    --font-size-h1:46px;
+    --font-size-h2:30px;
+    --font-size-wlcm:34px;
+    --font-size-p-name: .6rem;
+    --font-size-p-desc: .4rem;
+    --font-size-p-price: .8rem;
+  
+  }
+}
+/* ************** ( 600px and down) **************** */
+@media (max-width: 600px) {
+  :root{
+    --font-size-p:16px;
+    --font-size-h1:40px;
+    --font-size-h2:36px;
+    --font-size-wlcm:30px;
+    --font-size-p-name: .6rem;
+    --font-size-p-desc: .4rem;
+    --font-size-p-price: .8rem;
+  
+  }
+}
+/* phones, */
+/* ************** ( 600px and down)  **************** */
+

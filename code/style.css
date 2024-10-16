@@ -8,6 +8,9 @@
   box-sizing: border-box;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +20,9 @@ body {
 
 /*              ******** header ********              */
 /* top bar */
+section,footer,header{
+  width: 100vw;
+}
 header {
   position: relative;
 }
@@ -74,6 +80,10 @@ footer {
   justify-content: space-between;
   margin-top: 10px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 nav,
 .bar-icons {
   display: flex;
@@ -98,8 +108,8 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.084);
 }
 nav a:hover{
 /* background-color: rgb(206, 43, 43); */
-color: blueviolet;
-border-bottom: 2px solid rgb(208, 23, 196);
+color: #5d67ff;
+border-bottom: 2px solid rgb(0, 100, 157);
 }
 /*  */
 
@@ -117,7 +127,7 @@ border-bottom: 2px solid rgb(208, 23, 196);
 }
 /* .content div img {
   width: 100%;
-} */
+} */ 
 .content.welcome{
   padding-top:150px ;
   height: 750px;
@@ -141,9 +151,9 @@ a button{
 a button:hover{
     background: linear-gradient(20deg,#ffffff,rgb(72, 216, 253),#ffffff);
     color: #333;
-    font-weight: 700;
+    /* font-weight: 700; */
     transform: scale(1.05);
-    transition: ease-in-out  .3s;
+    transition: all ease-in-out  .2s;
 }
 /* ********************  about section  ******************** */
 #about .content{
@@ -166,12 +176,12 @@ a button:hover{
   align-items: flex-start;
 }
 #about .content .about-col img{
-  height: 544px;
-  width: 544px;
+  height: 444px;
+  width: 444px;
   object-fit: cover;
 }
 
-/* ********************  features section  ******************** */
+/* ********************  offers section  ******************** */
 .list-product{
   display: flex;
   justify-content: center;
@@ -190,8 +200,8 @@ a button:hover{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: background-color .4s;
-  transition: transform .3s ease-in;
+  /* transition: background-color .4s;
+  transition: transform .3s ease-in; */
   padding: 5px 20px;
 }
 
@@ -211,7 +221,27 @@ width: 100%;
 .product:hover{
  /* background-color: var(--ft-color); */
  background: linear-gradient(100deg,rgba(124, 205, 252, 0.363),rgba(124, 205, 252, 0.785),rgba(124, 205, 252, 0.584));
- 
-
  transform: scale(1.02);
+ transition: all   .2s;
 }
+/* ********************  features section  ******************** */
+
+.features-list{
+display: flex;
+justify-content: center;
+gap: 5%;
+align-items: center; 
+}
+.feature-item{
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .feature-item img{
+    width: 100%;
+    border-radius: 100%;
+    
+  }
+  

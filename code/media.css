@@ -1,0 +1,125 @@
+@media (max-width: 1350px) {
+  body {
+    background: pink;
+  }
+  .content {
+    width: 1250px;
+  }
+}
+
+/* ************** ( 1200px and down)  **************** */
+@media (max-width: 1200px) {
+  body {
+    background: rgb(109, 106, 106);
+  }
+  .content {
+    width: 1100px;
+  }
+  .content.welcome img{
+    width: 450px;
+  }
+  #about .content .about-col img{
+    height: 444px;
+    width: 444px;
+  }
+  .product {
+    width: 170px;
+    height: 275px;
+  }
+  .product img {
+    width: 148px;
+    height: 187px;
+  }
+}
+@media (max-width: 1100px) {
+  body {
+    background: rgb(174, 79, 95);
+  }
+  .content {
+    width: 990px;
+  }
+  .content.welcome img{
+    width: 400px;
+  }
+  #about .content .about-col img{
+    height: 400px;
+    width: 400px;
+  }
+}
+/* large laptops and desktops, */
+/* ************** ( 992px and down)  **************** */
+
+@media (max-width: 992px) {
+  body {
+    background: orange;
+  }
+  .content {
+    width: 900px;
+  }
+  .content.welcome img{
+    width: 350px;
+  }
+  /* .content.welcome img{
+    width: 200px;
+  } */
+  #about .content .about-col img{
+    height: 300px;
+    width: 300px;
+  }
+  .list-product {
+    gap: 50px;
+  }
+  .product {
+    width: 150px;
+    height: 265px;
+  }
+  .product img {
+    width: 135px;
+    height: 160px;
+  }
+}
+/* ************** ( 768px and down)  **************** */
+
+@media (max-width: 768px) {
+  body {
+    background: blue;
+  }
+  .content {
+    width: 650px;
+  }
+  .content.welcome img{
+    width: 400px;
+  }
+  #about .content .about-col img{
+    height: 200px;
+    width: 200px;
+  }
+  .list-product {
+    gap: 30px;
+  }
+  .product {
+    width: 110px;
+    height: 185px;
+  }
+  .product img {
+    width: 93px;
+    height: 97px;
+  }
+}
+/* ************** ( 600px and down) **************** */
+@media (max-width: 600px) {
+  .content.welcome 
+  /* , #about .content */
+ {
+    flex-direction: column;
+  }
+  .bar{
+    display: none;
+  }
+  .welcome-text{
+    text-align: center;
+  }
+}
+/* phones, */
+/* ************** ( 600px and down)  **************** */
+
