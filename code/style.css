@@ -177,16 +177,17 @@ header .content {
   display: flex;
   flex-wrap: wrap;
 }
-a .button{
+a .button,button{
     background-color:  #333;
     color: #EEE;
     padding: 10px 25px;
     margin: 10px;
     border: #333 solid 2px;
     border-radius: 8px;
+    cursor: pointer;
     
 }
-a .button:hover{
+a .button:hover,button:hover{
     background: linear-gradient(20deg,#ffffff,rgb(72, 216, 253),#ffffff);
     color: #333;
     /* font-weight: 700; */
