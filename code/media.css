@@ -38,6 +38,13 @@
   .content {
     width: 990px;
   }
+  nav {
+    gap: 20px;
+  }
+  .bar-icons {
+    margin-left: 80px;
+    gap: 20px;
+  }
   .content.welcome img{
     width: 400px;
   }
@@ -54,10 +61,18 @@
     background: orange;
   }
   .content {
-    width: 900px;
+    
+    width:95%;
+  }
+  .bar-icons {
+    margin-left: 50px;
+    gap: 20px;
   }
   .content.welcome img{
     width: 350px;
+  }
+  .content.welcome{
+    gap: 0px;
   }
   /* .content.welcome img{
     width: 200px;
@@ -85,14 +100,20 @@
     background: blue;
   }
   .content {
-    width: 650px;
+    width: 96%;
   }
   .content.welcome img{
-    width: 400px;
+    width: 250px;
+  }
+  #about .content .about-col{
+    gap: 20px;
   }
   #about .content .about-col img{
     height: 200px;
     width: 200px;
+  }
+  #about .content{
+    gap: 40px;
   }
   .list-product {
     gap: 30px;
@@ -108,18 +129,69 @@
 }
 /* ************** ( 600px and down) **************** */
 @media (max-width: 600px) {
+    body {
+        background: rgb(255, 0, 153);
+      }
+      .content {
+        width: 94%;
+      }
+      .content.welcome img{
+        width: 300px;
+      }
+      #about .content .about-col img{
+        height: 200px;
+        width: 200px;
+      }
+      
+      .list-product {
+        gap: 30px;
+        /* flex-direction: column; */
+      }
+      .product {
+        width: 210px;
+        height: 285px;
+      }
+      .product img {
+        width: 150px;
+        height: 190px;
+      }
   .content.welcome 
   /* , #about .content */
  {
     flex-direction: column;
   }
-  .bar{
+  .bar .main-bar nav{
     display: none;
   }
   .welcome-text{
     text-align: center;
   }
 }
-/* phones, */
-/* ************** ( 600px and down)  **************** */
+@media (max-width: 500px) {
+    body {
+        background:rgb(88, 79, 79)
+    }
+    .content {
+       min-height: 98vh;
+      }
+    #about .content .about-col img{
+        height: 150px;
+        width: 150px;
+      }
+      #features .content{
+        gap: 80px;
+        justify-content: center;
+      }
 
+    .features-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    } 
+    .features-list .feature-item img{
+        width: 150px;
+        height: 150px;
+    }
+    
+
+}
