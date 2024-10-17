@@ -92,8 +92,35 @@ nav,
 nav {
   gap: 60px;
 }
-.side-menu-icon{
+/* .menu-icon{
   display: none;
+} */
+
+
+/* ul li {
+  text-decoration: none;
+} */
+.menu{
+  position: relative;
+  display: none;
+}
+.menu-phone{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu:hover  .menu-phone{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
 }
 .bar-icons {
   margin-left: 100px;
@@ -148,6 +175,7 @@ header .content {
 }
 .explore{
   display: flex;
+  flex-wrap: wrap;
 }
 a .button{
     background-color:  #333;

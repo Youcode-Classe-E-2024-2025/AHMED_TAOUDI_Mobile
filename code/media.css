@@ -1,7 +1,9 @@
+
 @media (max-width: 1350px) {
   body {
     background: pink;
   }
+  
   .content {
     width: 1250px;
   }
@@ -35,6 +37,7 @@
   body {
     background: rgb(174, 79, 95);
   }
+ 
   .content {
     width: 990px;
   }
@@ -112,6 +115,18 @@
     height: 200px;
     width: 200px;
   }
+  .menu{
+    display: block;
+  }
+  .bar .main-bar nav > a{
+    display: none;
+  }
+  /* .menu-icon{
+    display: block;
+  }
+  .menu-icon svg{
+    fill: black;
+  } */
   #about .content{
     gap: 40px;
   }
@@ -160,9 +175,7 @@
  {
     flex-direction: column;
   }
-  .bar .main-bar nav{
-    display: none;
-  }
+
   .welcome-text{
     text-align: center;
   }
