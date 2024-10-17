@@ -208,3 +208,28 @@
     
 
 }
+@media (max-width: 490px) {
+  #about .content {
+   flex-direction: column;
+  }
+  #about .content .end {
+   order: 3;
+   }
+  #about .content .about-col{
+    width: 90%;
+  }
+
+  
+  #about .content .about-col img{
+      height: 150px;
+      width: 150px;
+    }
+    #features .content{
+      gap: 80px;
+      justify-content: center;
+    }
+
+
+  
+
+}
